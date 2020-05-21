@@ -6,7 +6,13 @@
   <title>Anthony Trillo</title>
 </head>
 <body>
-  Menu
+  <ul>
+    <li><a href="{{ route('home') }}">Inicio</a></li>
+    <li><a href="{{ route('about') }}">Acerca de</a></li>
+    <li><a href="{{ route('project') }}">Proyectos</a></li>
+    <li><a href="{{ route('blog.index') }}">Blog</a></li>
+    <li><a href="{{ route('contact') }}">Contactos</a></li>
+  </ul>
 
   <div>
     @yield('content')
