@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <body>
-    <ul class="menu">
-        <li><a href="{{ route('home') }}">Inicio</a></li>
-        <li><a href="{{ route('about') }}">Acerca de</a></li>
-        <li><a href="{{ route('project') }}">Proyectos</a></li>
-        <li><a href="{{ route('blog.index') }}">Blog</a></li>
-        <li><a href="{{ route('contact') }}">Contactos</a></li>
-    </ul>
+    <nav class="navbar navbar-dark bg-dark">
+        <ul class="menu">
+            <li><a href="{{ route('home') }}">Inicio</a></li>
+            <li><a href="{{ route('about') }}">Acerca de</a></li>
+            <li><a href="{{ route('project') }}">Proyectos</a></li>
+            <li><a href="{{ route('blog.index') }}">Blog</a></li>
+            <li><a href="{{ route('contact') }}">Contactos</a></li>
+        </ul>
+    </nav>
 
     <div id="app">
         @yield('content')
