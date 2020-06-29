@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="hero">
         <div class="container">
             <h1 class="display-4">Desarrollador FullStack <br> PHP/Laravel</h1>
         </div>

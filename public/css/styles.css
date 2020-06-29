@@ -10,8 +10,8 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 
 body {
@@ -19,28 +19,49 @@ body {
     margin: 0px;
 }
 
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333;
-    /* justify-content: flex-end; */
+.header {
+    background: #222831;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.menu li a {
-    color: #fff;
-    display: block;
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+    color: white;
     text-decoration: none;
-    padding: 0.5em 1em;
-    /* justify-content: flex-end; */
-
 }
 
-@media screen and (min-width: 520px) {
+.header ul {
+    display: flex;
+    height: inherit;
+}
 
-    .menu {
-        display: flex;
-    }
+.header ul li {
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+.menu {
+    height: inherit;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
 }
 
 /* ESTILO CAROUSEL */
@@ -60,4 +81,75 @@ body {
     color:white;
     border-color: white;
     font-size: 18px;
+}
+
+.footer {
+    color: white;
+    background: #222831;  /* fallback for old browsers */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-description {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url('../images/twitter.png');
+}
+
+.social-link.linkedin {
+    background-image: url('../images/linkedin.png');
+}
+
+.social-link.github {
+    background-image: url('../images/github.png');
+}
+
+.social-link.instagram {
+    background-image: url('../images/instagram.png');
+}
+
+.container {
+    /* border: 2px solid red; */
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 520px) {
+
+    .menu {
+        display: flex;
+    }
 }
