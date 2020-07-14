@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anthony Trillo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Asap|Fjalla+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,8 +15,8 @@
             <a href="#">
                 <img src="#" height="50" alt=""/>
             </a>
-            <nav class="menu">
-                <ul>
+            <nav>
+                <ul class="menu">
                     <li><a href="{{ route('home') }}">Inicio</a></li>
                     <li><a href="{{ route('about') }}">Acerca de</a></li>
                     <li><a href="{{ route('project') }}">Proyectos</a></li>
@@ -35,7 +35,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-description">
-                Creade by Anthony Trillo 2020
+                Anthony Trillo 2020
             </div>
             <div class="social">
                 <a href="https://www.linkedin.com/in/anthonytr/" class="social-link linkedin"></a>
