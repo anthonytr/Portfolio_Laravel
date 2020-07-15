@@ -11,10 +11,10 @@
 <body>
 
     <header class="header">
-        <div class="logo">
-            <a href="#">
+        <div>
+            {{-- <a href="#">
                 <img src="#" height="50" alt=""/>
-            </a>
+            </a> --}}
             <nav>
                 <ul class="menu">
                     <li><a href="{{ route('home') }}">Inicio</a></li>
