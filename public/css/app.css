@@ -6,6 +6,8 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -43,6 +45,22 @@ body {
 #app {
   margin: auto;
   max-width: 800px;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: inline-start;
+}
+
+#content {
+  justify-content: space-between;
+}
+
+#container {
+  min-height: 100%;
 }
 
 .footer {
