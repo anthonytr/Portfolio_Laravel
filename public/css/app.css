@@ -63,6 +63,18 @@ img {
   min-height: 100%;
 }
 
+.container {
+  /*border: 2px solid red;*/
+  max-width: 1000px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: wrap;
+}
+
 .footer {
   color: white;
   background: #222831;
@@ -84,19 +96,37 @@ img {
 .footer-description {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .social {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .social-link {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 10px 5px;
-  background-size: 50px 50px;
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  background-size: 20px 20px;
+}
+
+.social-link.twitter {
+  background-image: url(/images/twitter.png?2aaa699930dec6b7c38dddbfe5c08d0d);
+}
+
+.social-link.linkedin {
+  background-image: url(/images/linkedin.png?dbed3d72e8b98cdbe0065faa5805d04f);
+}
+
+.social-link.github {
+  background-image: url(/images/github.png?81443a5834ba07972bae142a3fe2c24d);
+}
+
+.social-link.instagram {
+  background-image: url(/images/instagram.png?72c1fd4025a5a7034901bd1c0567e23f);
 }
 
 /* ESTILO CAROUSEL */
@@ -116,5 +146,19 @@ img {
   color: white;
   border-color: white;
   font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+
+  .social-link {
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
 }
 
