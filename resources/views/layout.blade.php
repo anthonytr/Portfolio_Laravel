@@ -11,21 +11,17 @@
 <body>
 
     <header class="header">
-        <div>
-            {{-- <a href="#">
-                <img src="#" height="50" alt=""/>
-            </a> --}}
             <nav>
                 <ul class="menu">
-                    <li><a href="{{ route('home') }}">Inicio</a></li>
-                    <li><a href="{{ route('about') }}">Acerca de</a></li>
-                    <li><a href="{{ route('project') }}">Proyectos</a></li>
-                    <li><a href="{{ route('blog.index') }}">Blog</a></li>
-                    <li><a href="{{ route('contact') }}">Contactos</a></li>
+                    <li class="logo"><a href="#">Logo</a></li>
+                    <li class="item"><a href="{{ route('home') }}">Inicio</a></li>
+                    <li class="item"><a href="{{ route('about') }}">Acerca de</a></li>
+                    <li class="item"><a href="{{ route('project') }}">Proyectos</a></li>
+                    <li class="item"><a href="{{ route('blog.index') }}">Blog</a></li>
+                    <li class="item"><a href="{{ route('contact') }}">Contacto</a></li>
+                    <li class="toggle"><span class="bars"></span></li>
                 </ul>
             </nav>
-        </div>
-
     </header>
 
     <div id="app">
@@ -45,6 +41,23 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+
+        $(function() {
+
+            $(".toggle").on("click", function() {
+
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+
+    </script>
 
 </body>
 </html>
