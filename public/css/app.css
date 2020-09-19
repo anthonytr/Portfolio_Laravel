@@ -1,20 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono&display=swap);
-
-* {
+@import url(https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono&display=swap);* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   display: flex;
   flex-direction: column;
 }
 
 header {
-    min-height: 100vh;
-    background: url("../images/code.jpg");
+  min-height: 100vh;
+  background: url(/images/code.jpg?b1a002324838954e9de8334c0ee9c415);
 }
 
 nav {
