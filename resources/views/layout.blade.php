@@ -31,7 +31,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-description">
-                © Anthony Trillo 2020
+                © Anthony Trillo
             </div>
             <div class="social">
                 <a href="https://www.linkedin.com/in/anthonytr/" class="social-link linkedin"></a>
