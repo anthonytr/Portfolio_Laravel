@@ -10,11 +10,6 @@ body {
     flex-direction: column;
   }
 
-header {
-    min-height: 100vh;
-    background: url("../../public/images/code.jpg");
-}
-
 nav {
     background: #222831;
     padding: 5px 20px;
@@ -55,6 +50,12 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.hero {
+    min-height: 100vh;
+    background: url("../../public/images/hero.jpg");
+    background-size: cover;
 }
 
 .toggle {
@@ -142,13 +143,6 @@ a:hover {
 #app {
     margin: auto;
     max-width: 800px;
-}
-
-img {
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
-    float: inline-start;
 }
 
 #content {
