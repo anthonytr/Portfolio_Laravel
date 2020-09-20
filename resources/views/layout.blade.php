@@ -14,7 +14,7 @@
     <header class="header">
         <nav>
             <ul class="menu">
-                <li id="logo"><a href="#">Logo</a></li>
+                <li class="logo"><a href="#">Logo</a></li>
                 <li class="item"><a href="{{ route('home') }}">Inicio</a></li>
                 <li class="item"><a href="{{ route('about') }}">Acerca de</a></li>
                 <li class="item"><a href="{{ route('project') }}">Proyectos</a></li>
@@ -22,23 +22,8 @@
                 <li class="item"><a href="{{ route('contact') }}">Contacto</a></li>
                 <li class="toggle"><span class="bars"></span></li>
             </ul>
-            <h2 class="big-text">Fullstack Developer</h2>
         </nav>
     </header>
-    <div class="intro">
-        <div class="intro-text">
-            <h1 class="hide">
-                <span class="text">Creating inovation</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text">For Everyday</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text">people.</span>
-            </h1>
-        </div>
-    </div>
-    <div class="slider"></div>
 
     <div id="app">
         @yield('content')
