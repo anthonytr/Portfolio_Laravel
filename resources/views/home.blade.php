@@ -21,8 +21,6 @@
         </div>
     </div>
 
-
-
     <div class="slider"></div>
 
     <div class="container">
@@ -35,5 +33,11 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+
+
+    </script>
 
 @endsection
