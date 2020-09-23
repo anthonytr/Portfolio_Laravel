@@ -2,7 +2,7 @@
 
 <main>
     <section class="hero">
-        <h1>s</h1>
+        <h2 class="big-text">Stride To Be</h2>
     </section>
 </main>
     <div class="intro">
