@@ -3,80 +3,82 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
   }
-
 nav {
     background: #222831;
     padding: 5px 20px;
 }
-
 ul {
     list-style-type: none;
     margin-bottom: 0;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
     color: white;
 }
-
 .menu li {
     font-size: 16px;
     padding: 15px 5px;
 }
-
 .menu li a {
     display: block;
 }
+#logo a {
+    font-family: "lobster", cursive;
+    font-weight: lighter;
+    font-size: 2rem
+}
+.big-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-size: 5rem;
+    font-family: "lobster", cursive;
+    color: rgb(61,61,61);
+}
 
-.logo a {
-    font-size: 20px;
+.intro {
+    background: black;
+
 }
 
 //Menu del Movil
-
 .menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-
 .hero {
     min-height: 100vh;
     background: url("../../public/images/hero.jpg");
     background-size: cover;
+    padding: 0rem 5rem;
 }
-
 .toggle {
     order: 1;
 }
-
 .item {
     width: 100%;
     text-align: center;
     order: 2;
     display: none;
 }
-
 .item.active {
     display: block;
 }
-
 .toggle {
     cursor: pointer;
 }
-
 .bars {
     background: #999;
     display: inline-block;
@@ -84,7 +86,6 @@ a:hover {
     position: relative;
     width: 18px;
 }
-
 .bars::before, .bars::after {
     background: #999;
     content: "";
@@ -93,23 +94,20 @@ a:hover {
     position: absolute;
     width: 18px;
 }
-
 .bars::before {
     top: 5px;
 }
-
 .bars::after {
     top: -5px;
 }
 
 //Menu para Tablet
-
 @media all and (min-width: 468px) {
     .menu {
         justify-content: center;
     }
 
-    .logo {
+    #logo {
         flex: 1;
     }
 
@@ -119,7 +117,6 @@ a:hover {
 }
 
 //Menu para escritorio
-
 @media all and (min-width: 768px) {
     .item {
         display: block;
@@ -130,7 +127,7 @@ a:hover {
         display: none;
     }
 
-    .logo {
+    #logo {
         order: 0;
     }
 
@@ -138,21 +135,16 @@ a:hover {
         padding: 15px 10px;
     }
 }
-
-
 #app {
     margin: auto;
     max-width: 800px;
 }
-
 #content {
     justify-content: space-between;
 }
-
 #container {
     min-height: 100%;
 }
-
 .container {
     /*border: 2px solid red;*/
     max-width: 1000px;
@@ -166,7 +158,6 @@ a:hover {
 }
 
 //Estilos del footer
-
 .footer {
     color: white;
     background: #222831;  /* fallback for old browsers */
@@ -174,29 +165,23 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
-
 .footer img {
     vertical-align: middle;
 }
-
 .footer a {
     color: white;
 }
-
 .footer-description {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .social {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .social-link {
     display: inline-block;
     width: 20px;
@@ -204,23 +189,18 @@ a:hover {
     margin: 20px 10px;
     background-size: 20px 20px;
 }
-
 .social-link.twitter {
     background-image: url('../../public/images/twitter.png');
 }
-
 .social-link.linkedin {
     background-image: url('../../public/images/linkedin.png');
 }
-
 .social-link.github {
     background-image: url('../../public/images/github.png');
 }
-
 .social-link.instagram {
     background-image: url('../../public/images/instagram.png');
 }
-
 
 @media screen and (max-width: 480px) {
     .footer {

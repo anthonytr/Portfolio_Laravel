@@ -14,7 +14,7 @@
     <header class="header">
         <nav>
             <ul class="menu">
-                <li class="logo"><a href="#">Logo</a></li>
+                <li id="logo"><a href="#">Logo</a></li>
                 <li class="item"><a href="<?php echo e(route('home')); ?>">Inicio</a></li>
                 <li class="item"><a href="<?php echo e(route('about')); ?>">Acerca de</a></li>
                 <li class="item"><a href="<?php echo e(route('project')); ?>">Proyectos</a></li>
